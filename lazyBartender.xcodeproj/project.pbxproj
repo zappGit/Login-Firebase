@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		B81B5B2226B851530073B78B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B5B2126B851530073B78B /* AppDelegate.swift */; };
 		B81B5B2426B851530073B78B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B5B2326B851530073B78B /* SceneDelegate.swift */; };
-		B81B5B2626B851530073B78B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B5B2526B851530073B78B /* ViewController.swift */; };
+		B81B5B2626B851530073B78B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B5B2526B851530073B78B /* LoginViewController.swift */; };
 		B81B5B2926B851530073B78B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81B5B2726B851530073B78B /* Main.storyboard */; };
 		B81B5B2B26B851550073B78B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81B5B2A26B851550073B78B /* Assets.xcassets */; };
 		B81B5B2E26B851550073B78B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81B5B2C26B851550073B78B /* LaunchScreen.storyboard */; };
+		B81B5B3626B85B6C0073B78B /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B5B3526B85B6C0073B78B /* BarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B81B5B1E26B851530073B78B /* lazyBartender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazyBartender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81B5B2126B851530073B78B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B81B5B2326B851530073B78B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B81B5B2526B851530073B78B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B81B5B2526B851530073B78B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B81B5B2826B851530073B78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B81B5B2A26B851550073B78B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B81B5B2D26B851550073B78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B81B5B2F26B851550073B78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B81B5B3526B85B6C0073B78B /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,30 @@
 			children = (
 				B81B5B2126B851530073B78B /* AppDelegate.swift */,
 				B81B5B2326B851530073B78B /* SceneDelegate.swift */,
-				B81B5B2526B851530073B78B /* ViewController.swift */,
+				B81B5B3826B85BCF0073B78B /* Controller */,
+				B81B5B3726B85BB50073B78B /* Support */,
+			);
+			path = lazyBartender;
+			sourceTree = "<group>";
+		};
+		B81B5B3726B85BB50073B78B /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				B81B5B2726B851530073B78B /* Main.storyboard */,
 				B81B5B2A26B851550073B78B /* Assets.xcassets */,
 				B81B5B2C26B851550073B78B /* LaunchScreen.storyboard */,
 				B81B5B2F26B851550073B78B /* Info.plist */,
 			);
-			path = lazyBartender;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		B81B5B3826B85BCF0073B78B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B81B5B2526B851530073B78B /* LoginViewController.swift */,
+				B81B5B3526B85B6C0073B78B /* BarViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B81B5B2626B851530073B78B /* ViewController.swift in Sources */,
+				B81B5B2626B851530073B78B /* LoginViewController.swift in Sources */,
 				B81B5B2226B851530073B78B /* AppDelegate.swift in Sources */,
+				B81B5B3626B85B6C0073B78B /* BarViewController.swift in Sources */,
 				B81B5B2426B851530073B78B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SJ4Y68PW7;
-				INFOPLIST_FILE = lazyBartender/Info.plist;
+				INFOPLIST_FILE = lazyBartender/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SJ4Y68PW7;
-				INFOPLIST_FILE = lazyBartender/Info.plist;
+				INFOPLIST_FILE = lazyBartender/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
