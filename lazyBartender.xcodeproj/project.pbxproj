@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A4B13522AE4CD9A06EB6E79 /* Pods_lazyBartender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74E244F301509C6B4708E71 /* Pods_lazyBartender.framework */; };
 		B81B5B2226B851530073B78B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B5B2126B851530073B78B /* AppDelegate.swift */; };
 		B81B5B2426B851530073B78B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B5B2326B851530073B78B /* SceneDelegate.swift */; };
 		B81B5B2626B851530073B78B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B5B2526B851530073B78B /* LoginViewController.swift */; };
@@ -14,9 +15,12 @@
 		B81B5B2B26B851550073B78B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81B5B2A26B851550073B78B /* Assets.xcassets */; };
 		B81B5B2E26B851550073B78B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81B5B2C26B851550073B78B /* LaunchScreen.storyboard */; };
 		B81B5B3626B85B6C0073B78B /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B5B3526B85B6C0073B78B /* BarViewController.swift */; };
+		B81B5B3A26B9B7A00073B78B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B81B5B3926B9B7A00073B78B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F69805E1ADB4B965DE18E5B /* Pods-lazyBartender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lazyBartender.debug.xcconfig"; path = "Target Support Files/Pods-lazyBartender/Pods-lazyBartender.debug.xcconfig"; sourceTree = "<group>"; };
+		359ACBE08A21E0859A05AFBF /* Pods-lazyBartender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lazyBartender.release.xcconfig"; path = "Target Support Files/Pods-lazyBartender/Pods-lazyBartender.release.xcconfig"; sourceTree = "<group>"; };
 		B81B5B1E26B851530073B78B /* lazyBartender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazyBartender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81B5B2126B851530073B78B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B81B5B2326B851530073B78B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		B81B5B2D26B851550073B78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B81B5B2F26B851550073B78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B81B5B3526B85B6C0073B78B /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
+		B81B5B3926B9B7A00073B78B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E74E244F301509C6B4708E71 /* Pods_lazyBartender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lazyBartender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4B13522AE4CD9A06EB6E79 /* Pods_lazyBartender.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091E897E89C24E68BC200655 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E74E244F301509C6B4708E71 /* Pods_lazyBartender.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		219F28203A390656303DAEBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F69805E1ADB4B965DE18E5B /* Pods-lazyBartender.debug.xcconfig */,
+				359ACBE08A21E0859A05AFBF /* Pods-lazyBartender.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B81B5B1526B851530073B78B = {
 			isa = PBXGroup;
 			children = (
 				B81B5B2026B851530073B78B /* lazyBartender */,
 				B81B5B1F26B851530073B78B /* Products */,
+				219F28203A390656303DAEBB /* Pods */,
+				091E897E89C24E68BC200655 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +100,7 @@
 				B81B5B2A26B851550073B78B /* Assets.xcassets */,
 				B81B5B2C26B851550073B78B /* LaunchScreen.storyboard */,
 				B81B5B2F26B851550073B78B /* Info.plist */,
+				B81B5B3926B9B7A00073B78B /* GoogleService-Info.plist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -93,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B81B5B3226B851550073B78B /* Build configuration list for PBXNativeTarget "lazyBartender" */;
 			buildPhases = (
+				EC47C2F28FDA5800AC355CD3 /* [CP] Check Pods Manifest.lock */,
 				B81B5B1A26B851530073B78B /* Sources */,
 				B81B5B1B26B851530073B78B /* Frameworks */,
 				B81B5B1C26B851530073B78B /* Resources */,
+				663D9041049F8BFD956519A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,12 +174,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				B81B5B2E26B851550073B78B /* LaunchScreen.storyboard in Resources */,
+				B81B5B3A26B9B7A00073B78B /* GoogleService-Info.plist in Resources */,
 				B81B5B2B26B851550073B78B /* Assets.xcassets in Resources */,
 				B81B5B2926B851530073B78B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		663D9041049F8BFD956519A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lazyBartender/Pods-lazyBartender-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lazyBartender/Pods-lazyBartender-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lazyBartender/Pods-lazyBartender-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC47C2F28FDA5800AC355CD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lazyBartender-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B81B5B1A26B851530073B78B /* Sources */ = {
@@ -303,6 +376,7 @@
 		};
 		B81B5B3326B851550073B78B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F69805E1ADB4B965DE18E5B /* Pods-lazyBartender.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +396,7 @@
 		};
 		B81B5B3426B851550073B78B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 359ACBE08A21E0859A05AFBF /* Pods-lazyBartender.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

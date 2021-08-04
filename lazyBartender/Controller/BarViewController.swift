@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class BarViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
@@ -41,5 +42,13 @@ class BarViewController: UIViewController, UITableViewDelegate,UITableViewDataSo
         // Pass the selected object to the new view controller.
     }
     */
-
+   
+    @IBAction func signOut(_ sender: UIBarButtonItem) {
+        do {
+            try Auth.auth().signOut()
+        } catch  {
+            print(error.localizedDescription)
+        }
+        dismiss(animated: true, completion: nil)
+}
 }

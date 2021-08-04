@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="yYN-z3-tYl">
-                                <rect key="frame" x="50" y="601" width="314" height="211"/>
+                                <rect key="frame" x="50" y="452" width="314" height="260"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mUt-i7-nvM">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="78"/>
@@ -44,7 +44,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wCj-F8-OpT">
-                                        <rect key="frame" x="50" y="128" width="214" height="83"/>
+                                        <rect key="frame" x="50" y="128" width="214" height="132"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="554-qt-S00">
                                                 <rect key="frame" x="0.0" y="0.0" width="214" height="34"/>
@@ -56,7 +56,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZR6-fK-rJF"/>
-                                                    <segue destination="736-rK-1GO" kind="show" identifier="loginSegue" id="ilV-em-k0L"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iz0-aE-1q6">
@@ -69,6 +68,19 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="registerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H30-ud-ksm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUb-MS-GlA">
+                                                <rect key="frame" x="92" y="103" width="30" height="29"/>
+                                                <color key="backgroundColor" red="0.75056076049999998" green="0.061927996579999998" blue="0.097006015479999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="test">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="registerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OjB-C7-odN"/>
+                                                    <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Mc-dQ-oFk"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -91,14 +103,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yYN-z3-tYl" secondAttribute="bottom" constant="50" id="9c1-O9-w2S"/>
-                            <constraint firstItem="yYN-z3-tYl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="VlY-TF-whO"/>
-                            <constraint firstItem="bGO-jJ-RSv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XRm-VQ-V1r"/>
-                            <constraint firstItem="bGO-jJ-RSv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ahJ-yQ-6ZH"/>
-                            <constraint firstItem="yYN-z3-tYl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gaI-1a-9jo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yYN-z3-tYl" secondAttribute="trailing" constant="50" id="t6L-tT-QQ4"/>
-                            <constraint firstAttribute="bottom" secondItem="bGO-jJ-RSv" secondAttribute="bottom" id="tnL-sX-z5m"/>
-                            <constraint firstItem="bGO-jJ-RSv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w7v-2t-xEI"/>
+                            <constraint firstItem="bGO-jJ-RSv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1kb-AV-AaI"/>
+                            <constraint firstAttribute="trailing" secondItem="bGO-jJ-RSv" secondAttribute="trailing" id="JXP-iL-dzR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yYN-z3-tYl" secondAttribute="bottom" constant="150" id="UjR-oq-xs6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yYN-z3-tYl" secondAttribute="trailing" constant="50" id="dbz-Su-0kh"/>
+                            <constraint firstItem="yYN-z3-tYl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="hjm-Az-8Om"/>
+                            <constraint firstAttribute="bottom" secondItem="bGO-jJ-RSv" secondAttribute="bottom" id="sgO-0b-iA0"/>
+                            <constraint firstItem="bGO-jJ-RSv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vJS-8d-DwE"/>
                         </constraints>
                     </view>
                     <connections>
@@ -106,6 +117,7 @@
                         <outlet property="loginTextField" destination="cYX-9J-2mR" id="oPB-Cc-SJI"/>
                         <outlet property="passwordTextfield" destination="9jI-ZW-cgG" id="dHw-yg-yir"/>
                         <outlet property="registerButton" destination="Iz0-aE-1q6" id="XuW-YN-LLv"/>
+                        <segue destination="736-rK-1GO" kind="show" identifier="loginSegue" id="wSQ-4z-mHq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -152,6 +164,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="BAR" id="zZM-fA-fp1">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="JP1-VS-JyE">
+                            <connections>
+                                <action selector="signOut:" destination="Ri9-rv-taq" id="YHA-Ry-AI6"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="7pd-4p-gTG"/>
                     </navigationItem>
                     <connections>
