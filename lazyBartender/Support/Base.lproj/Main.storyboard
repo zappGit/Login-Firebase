@@ -112,6 +112,7 @@
                             <constraint firstItem="bGO-jJ-RSv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vJS-8d-DwE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="voD-S7-Tlf"/>
                     <connections>
                         <outlet property="loginButton" destination="554-qt-S00" id="crW-1P-PbS"/>
                         <outlet property="loginTextField" destination="cYX-9J-2mR" id="oPB-Cc-SJI"/>
@@ -122,12 +123,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="104.46428571428571"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="104.46428571428571"/>
         </scene>
         <!--BAR-->
         <scene sceneID="gXG-VH-Pcd">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Ri9-rv-taq" customClass="BarViewController" customModule="lazyBartender" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="bar" modalPresentationStyle="fullScreen" id="Ri9-rv-taq" customClass="BarViewController" customModule="lazyBartender" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JUO-pf-3Oa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +170,11 @@
                                 <action selector="signOut:" destination="Ri9-rv-taq" id="YHA-Ry-AI6"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7pd-4p-gTG"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7pd-4p-gTG">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="Ri9-rv-taq" id="7FN-XN-OkR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="2he-Yf-rmU" id="W59-7q-HKJ"/>
@@ -177,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCX-IG-nUP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959" y="104"/>
+            <point key="canvasLocation" x="1868.1159420289857" y="103.79464285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qUQ-xD-BWS">
@@ -196,7 +201,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJw-4g-pKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="-632"/>
+            <point key="canvasLocation" x="1868" y="-655"/>
         </scene>
     </scenes>
     <resources>

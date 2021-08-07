@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -60,7 +60,6 @@
 				2F69805E1ADB4B965DE18E5B /* Pods-lazyBartender.debug.xcconfig */,
 				359ACBE08A21E0859A05AFBF /* Pods-lazyBartender.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
