@@ -14,26 +14,20 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
-    
-    
-    
-    var currentUser = ""
-    
-    
+    @IBOutlet weak var pass: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.layer.cornerRadius = loginButton.frame.size.height/2
         registerButton.layer.cornerRadius = registerButton.frame.size.height/2
+        pass.layer.cornerRadius = pass.frame.size.height/2
         self.hideKeyboardWhenTappedAround()
+        //Check auth of current user if its true show next vc
         Auth.auth().addStateDidChangeListener { [weak self] (auth, user) in
             if user != nil {
                 self?.performSegue(withIdentifier: "loginSegue", sender: nil)
-                
             }
         }
-        
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -42,11 +36,7 @@ class LoginViewController: UIViewController {
         passwordTextfield.text = ""
         
     }
-    
-    
-    
-    
-    
+    //Log in check
     @IBAction func loginButtonTapped(_ sender: Any) {
         guard let email = loginTextField.text,
               let password = passwordTextfield.text,
@@ -54,7 +44,6 @@ class LoginViewController: UIViewController {
               password != "" else {
             return
         }
-        //Проверка на логин
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] (user, error) in
             if error != nil {
                 print("\(String(describing: error))")
@@ -67,6 +56,7 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    //Registration
     @IBAction func registerButtonTapped(_ sender: Any) {
         guard let email = loginTextField.text,
               let password = passwordTextfield.text,
@@ -81,34 +71,19 @@ class LoginViewController: UIViewController {
             let userId: String = (Auth.auth().currentUser?.uid)!
             let newUser = db.collection("users").document("\(userId)")
             newUser.setData(["email": (self?.loginTextField.text)!, "password": (self?.passwordTextfield.text)!, "id": userId])
-            self!.currentUser = String(newUser.documentID)
-            
-            
         }
-        
-      
-        
-        
     }
-        
-       
-    
-    
+    //Forgot pass
     @IBAction func test(_ sender: Any) {
         guard let email = loginTextField.text,
               email != ""  else {return}
         Auth.auth().sendPasswordReset(withEmail: email) { error in
             if error != nil {
-                print(error?.localizedDescription)
+                print("error")
             }
         }
     }
-    
 }
-
-
-
-
 
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {

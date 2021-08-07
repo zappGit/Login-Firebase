@@ -71,11 +71,11 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUb-MS-GlA">
-                                                <rect key="frame" x="92" y="103" width="30" height="29"/>
+                                                <rect key="frame" x="0.0" y="103" width="214" height="29"/>
                                                 <color key="backgroundColor" red="0.75056076049999998" green="0.061927996579999998" blue="0.097006015479999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="test">
+                                                <state key="normal" title="Forgot password?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -85,8 +85,13 @@
                                             </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="gUb-MS-GlA" secondAttribute="bottom" id="EBp-Dx-45O"/>
                                             <constraint firstAttribute="trailing" secondItem="554-qt-S00" secondAttribute="trailing" id="I21-i2-G8s"/>
+                                            <constraint firstItem="gUb-MS-GlA" firstAttribute="top" secondItem="Iz0-aE-1q6" secondAttribute="bottom" constant="20" id="ORC-Jc-mts"/>
+                                            <constraint firstAttribute="trailing" secondItem="gUb-MS-GlA" secondAttribute="trailing" id="am5-cM-u5M"/>
                                             <constraint firstItem="Iz0-aE-1q6" firstAttribute="leading" secondItem="wCj-F8-OpT" secondAttribute="leading" id="h50-hG-kfB"/>
+                                            <constraint firstAttribute="bottom" secondItem="gUb-MS-GlA" secondAttribute="bottom" id="hXb-sQ-Vwz"/>
+                                            <constraint firstItem="gUb-MS-GlA" firstAttribute="leading" secondItem="wCj-F8-OpT" secondAttribute="leading" id="nq0-HF-EUg"/>
                                             <constraint firstItem="554-qt-S00" firstAttribute="leading" secondItem="wCj-F8-OpT" secondAttribute="leading" id="nr9-gB-5eF"/>
                                             <constraint firstAttribute="trailing" secondItem="Iz0-aE-1q6" secondAttribute="trailing" id="rw6-e8-WLn"/>
                                         </constraints>
@@ -116,6 +121,7 @@
                     <connections>
                         <outlet property="loginButton" destination="554-qt-S00" id="crW-1P-PbS"/>
                         <outlet property="loginTextField" destination="cYX-9J-2mR" id="oPB-Cc-SJI"/>
+                        <outlet property="pass" destination="gUb-MS-GlA" id="f3q-vg-I6L"/>
                         <outlet property="passwordTextfield" destination="9jI-ZW-cgG" id="dHw-yg-yir"/>
                         <outlet property="registerButton" destination="Iz0-aE-1q6" id="XuW-YN-LLv"/>
                         <segue destination="736-rK-1GO" kind="show" identifier="loginSegue" id="wSQ-4z-mHq"/>
